@@ -1,3 +1,8 @@
+import Task5_OOP.Circle;
+import Task5_OOP.Rectangle;
+import Task5_OOP.Shape;
+
+import java.awt.*;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -25,11 +30,33 @@ public class Main {
 //        HW1.getEvenNumbersUntilN(scanner);
 //        HW1.nestedLoops();
 //        HW1.rectangleOfStars(scanner);
-        HW1.pyramidOfStars(scanner);
+//        HW1.pyramidOfStars(scanner);
 
-//        Circle circle = new Circle(5);
+//        Task1_OOP.Circle circle = new Task1_OOP.Circle(5);
 //        System.out.println("Площадь: " + circle.getArea());
 //        System.out.println("Длина окружности: " + circle.getCircumference());
+
+//        Book book = new Book("Мастер и Маргарита", "М. Булгаков", 500);
+//        book.printInfo();
+
+//        Task3_OOP.Employee emp = new Task3_OOP.Employee("Иван", 30000);
+//        Task3_OOP.Manager mgr = new Task3_OOP.Manager("Ольга", 50000, 10000);
+//
+//        emp.printInfo(); // Иван: зарплата 30000
+//        mgr.printInfo(); // Ольга: зарплата 50000, бонус 10000
+
+//        BankAccount account = new BankAccount("12345", 1000.0);
+//        account.deposit(500);
+//        account.withdraw(300);
+//        System.out.println("balance: " + account.getBalance());
+
+        Shape rectangle = new Rectangle(4, 5);
+        Shape circle = new Circle(3);
+
+        System.out.println("Площадь прямоугольника: " + rectangle.getArea());
+        System.out.println("Периметр прямоугольника: " + rectangle.getPerimeter());
+        System.out.println("Площадь круга: " + circle.getArea());
+        System.out.println("Периметр круга: " + circle.getPerimeter());
 
     }
 }
