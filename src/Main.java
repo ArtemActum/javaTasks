@@ -36,7 +36,7 @@ public class Main {
 //        System.out.println("Площадь: " + circle.getArea());
 //        System.out.println("Длина окружности: " + circle.getCircumference());
 
-//        Book book = new Book("Мастер и Маргарита", "М. Булгаков", 500);
+//        Task2_OOP.Book book = new Task2_OOP.Book("Мастер и Маргарита", "М. Булгаков", 500);
 //        book.printInfo();
 
 //        Task3_OOP.Employee emp = new Task3_OOP.Employee("Иван", 30000);
@@ -45,7 +45,7 @@ public class Main {
 //        emp.printInfo(); // Иван: зарплата 30000
 //        mgr.printInfo(); // Ольга: зарплата 50000, бонус 10000
 
-//        BankAccount account = new BankAccount("12345", 1000.0);
+//        Task4_OOP.BankAccount account = new Task4_OOP.BankAccount("12345", 1000.0);
 //        account.deposit(500);
 //        account.withdraw(300);
 //        System.out.println("balance: " + account.getBalance());
