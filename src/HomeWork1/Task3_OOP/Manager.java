@@ -1,4 +1,4 @@
-package Task3_OOP;
+package HomeWork1.Task3_OOP;
 
 class Manager extends Employee {
 

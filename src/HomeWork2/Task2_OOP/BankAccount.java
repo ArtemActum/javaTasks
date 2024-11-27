@@ -1,4 +1,13 @@
-package Task4_OOP;
+//Создайте класс BankAccount, который будет представлять банковский счет.
+//Класс должен содержать:
+//Поля:
+//Номер счета (accountNumber).
+//Баланс (balance).
+//Методы:
+//deposit(double amount): пополнение счета.
+//withdraw(double amount): снятие денег с проверкой на достаточность средств.
+//getBalance(): возвращает текущий баланс.
+package HomeWork2.Task2_OOP;
 
 public class BankAccount {
     private String accountNumber;
