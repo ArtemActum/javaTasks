@@ -2,11 +2,18 @@
 //import HomeWork1.Task5_OOP.Rectangle;
 //import HomeWork1.Task5_OOP.Shape;
 
-import HomeWork2.Task1_OOP.Rectangle_HW2;
-import HomeWork2.Task3_OOP.Item;
-import HomeWork2.Task4_OOP.Person;
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
+
+//import static HomeWork3.LinkedListNode.LinkedList.reverseCollection;
+import static HomeWork3.Task1.ArraySum.sumArray;
+import static HomeWork3.Task2.Strings.reverseString;
+import static HomeWork3.Task3.Lists.removeEvenNumbers;
+import static HomeWork3.Task4.Stacks.isValid;
+import static HomeWork3.Task5.ArrayRotation.rotateArray;
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -61,53 +68,109 @@ public class Main {
 //        System.out.println("Площадь круга: " + circle.getArea());
 //        System.out.println("Периметр круга: " + circle.getPerimeter());
 
-//        HomeWork2
-//        Task1
-        Rectangle_HW2 rectangle = new Rectangle_HW2(4, 5);
-        System.out.println("Площадь прямоугольника: " + rectangle.calculateArea());
-        System.out.println("Периметр прямоугольника: " + rectangle.calculatePerimeter());
+////        HomeWork2
+////        Task1
+//        Rectangle_HW2 rectangle = new Rectangle_HW2(4, 5);
+//        System.out.println("Площадь прямоугольника: " + rectangle.calculateArea());
+//        System.out.println("Периметр прямоугольника: " + rectangle.calculatePerimeter());
+//
+////        Task2
+//        HomeWork2.Task2_OOP.BankAccount account = new HomeWork2.Task2_OOP.BankAccount("12345", 1000.0);
+//        account.deposit(500);
+//        account.withdraw(300);
+//        System.out.println("balance: " + account.getBalance());
+//
+////        Task3
+//        Item item = new Item("Potato", 1200.50, 10);
+//
+//        System.out.println(item.getInfo());
+//
+//        item.sell(3);
+//        System.out.println(item.getInfo());
+//
+//        item.restock(5);
+//        System.out.println(item.getInfo());
+//
+////        Task4
+//        Person person1 = new Person("Иван", 25, "мужчина", "Барселона");
+//        Person person2 = new Person("Иван", 25, "мужчина", "Санкт-Петербург");
+//        Person person3 = new Person("Иван", 26, "мужчина", "Рим");
+//        Person person4 = new Person("Валентин", 27, "мужчина", "Париж");
+//
+//        person1.setCity("Прага");
+//        person2.setCity("Астана");
+//
+//        System.out.println("Имя: " + person1.getName());
+//        System.out.println("Возраст: " + person1.getAge());
+//        System.out.println("Пол: " + person1.getGender());
+//        System.out.println("Город: " + person1.getCity());
+//
+//        System.out.println("Люди равны: " + person1.equals(person2)); // Вывод: true
+//        System.out.println("HashCode person1: " + person1.hashCode());
+//        System.out.println("HashCode person2: " + person2.hashCode());
+//
+//        System.out.println("Люди равны: " + person2.equals(person3)); // Вывод: false
+//        System.out.println("HashCode person2: " + person2.hashCode());
+//        System.out.println("HashCode person3: " + person3.hashCode());
+//
+//        System.out.println("Люди равны: " + person3.equals(person4)); // Вывод: false
+//        System.out.println("HashCode person3: " + person3.hashCode());
+//        System.out.println("HashCode person4: " + person4.hashCode());
 
-//        Task2
-        HomeWork2.Task2_OOP.BankAccount account = new HomeWork2.Task2_OOP.BankAccount("12345", 1000.0);
-        account.deposit(500);
-        account.withdraw(300);
-        System.out.println("balance: " + account.getBalance());
+        //        HW3.LinkedListNode
+//        LinkedList list = new LinkedList();
+//        list.add(10);
+//        list.add(20);
+//        list.add(30);
+//        list.add(40);
+//
+//        System.out.println("Исходный список:");
+//        list.printList(); // Вывод: 10 -> 20 -> 30 -> 40 -> null
+//
+//        list.reverse();
+//
+//        System.out.println("Развёрнутый список:");
+//        list.printList(); // Вывод: 40 -> 30 -> 20 -> 10 -> null
 
-//        Task3
-        Item item = new Item("Potato", 1200.50, 10);
+//        HW3.Task1
+//        int[] numbers = {1, 2, 3, 4, 5};
+//        int result = sumArray(numbers);
+//        System.out.println("Сумма элементов массива: " + result);
 
-        System.out.println(item.getInfo());
+        //        HW3.Task2
+//        String input = "Hello, World!";
+//        System.out.println("Обратный порядок: " + reverseString(input));
 
-        item.sell(3);
-        System.out.println(item.getInfo());
+        //        HW3.Task3
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+        numbers.add(6);
 
-        item.restock(5);
-        System.out.println(item.getInfo());
+        System.out.println("До удаления: " + numbers);
+        removeEvenNumbers(numbers);
+        System.out.println("После удаления: " + numbers);
 
-//        Task4
-        Person person1 = new Person("Иван", 25, "мужчина", "Барселона");
-        Person person2 = new Person("Иван", 25, "мужчина", "Санкт-Петербург");
-        Person person3 = new Person("Иван", 26, "мужчина", "Рим");
-        Person person4 = new Person("Валентин", 27, "мужчина", "Париж");
+        //        HW3.Task4
+        String s1 = "([]{})";
+        String s2 = "([)]";
 
-        person1.setCity("Прага");
-        person2.setCity("Астана");
+        System.out.println(s1 + " — " + isValid(s1));
+        System.out.println(s2 + " — " + isValid(s2));
 
-        System.out.println("Имя: " + person1.getName());
-        System.out.println("Возраст: " + person1.getAge());
-        System.out.println("Пол: " + person1.getGender());
-        System.out.println("Город: " + person1.getCity());
+        //        HW3.Task5
+        int[] array = {1, 2, 3, 4, 5};
+        int n = 2;
 
-        System.out.println("Люди равны: " + person1.equals(person2)); // Вывод: true
-        System.out.println("HashCode person1: " + person1.hashCode());
-        System.out.println("HashCode person2: " + person2.hashCode());
+        int[] rotatedArray = rotateArray(array, n);
 
-        System.out.println("Люди равны: " + person2.equals(person3)); // Вывод: false
-        System.out.println("HashCode person2: " + person2.hashCode());
-        System.out.println("HashCode person3: " + person3.hashCode());
 
-        System.out.println("Люди равны: " + person3.equals(person4)); // Вывод: false
-        System.out.println("HashCode person3: " + person3.hashCode());
-        System.out.println("HashCode person4: " + person4.hashCode());
+        System.out.print("Ротация массива: ");
+        for (int num : rotatedArray) {
+            System.out.print(num + " ");
+        }
     }
 }
