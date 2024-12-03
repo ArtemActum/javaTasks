@@ -142,35 +142,38 @@ public class Main {
 //        System.out.println("Обратный порядок: " + reverseString(input));
 
         //        HW3.Task3
-        List<Integer> numbers = new ArrayList<>();
-        numbers.add(1);
-        numbers.add(2);
-        numbers.add(3);
-        numbers.add(4);
-        numbers.add(5);
-        numbers.add(6);
+//        List<Integer> numbers = new ArrayList<>();
+//        numbers.add(1);
+//        numbers.add(2);
+//        numbers.add(3);
+//        numbers.add(4);
+//        numbers.add(5);
+//        numbers.add(6);
+//
+//        System.out.println("До удаления: " + numbers);
+//        removeEvenNumbers(numbers);
+//        System.out.println("После удаления: " + numbers);
+//
+//        //        HW3.Task4
+//        String s1 = "([]{})";
+//        String s2 = "([)]";
+//
+//        System.out.println(s1 + " — " + isValid(s1));
+//        System.out.println(s2 + " — " + isValid(s2));
+//
+//        //        HW3.Task5
+//        int[] array = {1, 2, 3, 4, 5};
+//        int n = 2;
+//
+//        int[] rotatedArray = rotateArray(array, n);
+//
+//
+//        System.out.print("Ротация массива: ");
+//        for (int num : rotatedArray) {
+//            System.out.print(num + " ");
+//        }
 
-        System.out.println("До удаления: " + numbers);
-        removeEvenNumbers(numbers);
-        System.out.println("После удаления: " + numbers);
+//        IDiscountCalculator handler = new DiscountStrategyHandler().getStrategy(CustomerType.VIP);
 
-        //        HW3.Task4
-        String s1 = "([]{})";
-        String s2 = "([)]";
-
-        System.out.println(s1 + " — " + isValid(s1));
-        System.out.println(s2 + " — " + isValid(s2));
-
-        //        HW3.Task5
-        int[] array = {1, 2, 3, 4, 5};
-        int n = 2;
-
-        int[] rotatedArray = rotateArray(array, n);
-
-
-        System.out.print("Ротация массива: ");
-        for (int num : rotatedArray) {
-            System.out.print(num + " ");
-        }
     }
 }
