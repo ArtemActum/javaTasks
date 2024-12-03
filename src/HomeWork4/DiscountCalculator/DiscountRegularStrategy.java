@@ -1,4 +1,4 @@
-package calculator;
+package HomeWork4.DiscountCalculator;
 
 public class DiscountRegularStrategy implements IDiscountCalculator{
     @Override

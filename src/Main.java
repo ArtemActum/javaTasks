@@ -2,17 +2,15 @@
 //import HomeWork1.Task5_OOP.Rectangle;
 //import HomeWork1.Task5_OOP.Shape;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import HomeWork4.DiscountCalculator.CustomerType;
+import HomeWork4.DiscountCalculator.DiscountStrategyHandler;
+import HomeWork4.DiscountCalculator.IDiscountCalculator;
+import HomeWork4.Sorter.SortType;
+import HomeWork4.Sorter.Sorter;
+
 import java.util.Scanner;
 
 //import static HomeWork3.LinkedListNode.LinkedList.reverseCollection;
-import static HomeWork3.Task1.ArraySum.sumArray;
-import static HomeWork3.Task2.Strings.reverseString;
-import static HomeWork3.Task3.Lists.removeEvenNumbers;
-import static HomeWork3.Task4.Stacks.isValid;
-import static HomeWork3.Task5.ArrayRotation.rotateArray;
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -173,7 +171,11 @@ public class Main {
 //            System.out.print(num + " ");
 //        }
 
-//        IDiscountCalculator handler = new DiscountStrategyHandler().getStrategy(CustomerType.VIP);
+        IDiscountCalculator discountStrategy = new DiscountStrategyHandler().getStrategy(CustomerType.VIP);
+        System.out.println(discountStrategy.calculate(500));
 
+        Sorter sorter = new Sorter();
+        int[] array = {5, 3, 8, 6, 2};
+        sorter.sort(array, SortType.BUBBLE);
     }
 }

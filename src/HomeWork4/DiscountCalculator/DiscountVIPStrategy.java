@@ -1,6 +1,6 @@
-package calculator;
+package HomeWork4.DiscountCalculator;
 
-public abstract class DiscountVIPStrategy implements IDiscountCalculator {
+public class DiscountVIPStrategy implements IDiscountCalculator {
         @Override
         public double calculate(double amount){
                 return amount * 0.1;
